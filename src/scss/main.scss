@@ -23,7 +23,7 @@
 @import "./../scss/global/sections";
 
 // Плагины
-// @import "./../scss/libs/swiper-bundle.min"; // Слайдер
+@import "./../scss/libs/swiper-bundle.min"; // Слайдер
 
 // Хедер
 @import "./../components/sections/header/header";
@@ -34,8 +34,12 @@
 // БЭМ-блоки
 // @import "./../components/bem-blocks/accordion/accordion"; // Аккордион
 // @import "./../components/bem-blocks/burger/burger"; // Бургер
-// @import "./../components/bem-blocks/logo/logo"; // Логотип
+@import "./../components/bem-blocks/logo/logo"; // Логотип
 // @import "./../components/bem-blocks/nav/nav"; // Меню
 // @import "./../components/bem-blocks/modal/modal"; // Модалки
+@import "./../components/bem-blocks/slider/slider"; // слайдер
+@import "./../components/bem-blocks/phone/phone";
+@import "./../components/bem-blocks/social/social";
+@import "./../components/bem-blocks/address/address";
 
 // Секции

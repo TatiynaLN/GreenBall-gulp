@@ -1,0 +1,153 @@
+.sliderss-arrow {
+    // display: flex;
+    // min-width: 0;
+    position: relative; // напиши или потеряешь стрелки
+}
+
+.slider-arrow {
+    // width: auto; если в js колличество для показа стоит auto
+}
+.slider-addres {
+    width: 98.8rem;
+}
+.swiper-slider-addres {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    width: 98.8rem !important;
+    height: 456px;
+}
+
+.slider-addres-txt {
+    background-image: url("../img/icons/slider-addres-list.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 26px;
+    position: relative;
+    box-shadow: 0 10px 5px -5px #b8b8b8;
+    height: max-content;
+    padding: 3.8rem 5.1rem;
+    margin-right: -6rem;
+    &::after {
+        position: absolute;
+        content: "";
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        background: #e2e2e2;
+        border-radius: 26px;
+        z-index: -1;
+    }
+}
+// стрелки
+.swiper-button-prev,
+.swiper-button-next {
+    &::after {
+        color: brown;
+        font-size: 5rem;
+    }
+}
+// НЕ активная стрелка
+.swiper-button-disabled {
+    &::after {
+        color: rgb(10, 10, 10);
+        opacity: 0.8;
+    }
+}
+// буллеты - пагинация
+// обертка буллетов
+.swiper-pagination {
+}
+// буллеты
+.swiper-pagination-bullet {
+    width: 2rem;
+    height: 2rem;
+    line-height: 2rem;
+    font-size: 2rem;
+    background-color: yellowgreen;
+}
+// активный буллет
+.swiper-pagination-bullet-active {
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    font-size: 3rem;
+    background-color: rgb(141, 10, 108);
+}
+// Прогрессбар
+.sliderss-arrow .swiper-pagination-progressbar-fill {
+    background-color: tomato;
+}
+
+// СКРОЛЛБАР
+.sliderss-arrow .swiper-scrollbar {
+    cursor: pointer;
+    background-color: violet;
+}
+.swiper-scrollbar-drag {
+    background-color: yellow;
+}
+
+// переменные
+$color-p: red;
+$color2-p: rgb(32, 0, 128);
+//
+%name-item {
+    font-size: 3rem;
+    padding: 2rem;
+    background-color: rgba(green, 0.8);
+    margin-bottom: 1rem;
+}
+
+/*как подключит второй файл scss для компиляции в общий css
+@import "name.scss";
+*/
+.p {
+    color: $color-p;
+    @extend %name-item;
+}
+.p2 {
+    color: $color2-p;
+    @extend %name-item;
+}
+.p3 {
+    color: $color-p;
+    @extend %name-item;
+    margin-bottom: 5rem;
+}
+
+// миксины
+@mixin df($f, $j, $a) {
+    display: $f;
+    justify-content: $j;
+    align-items: $a;
+}
+.df {
+    @include df(flex, space-between, center);
+}
+// слайдер в слайдере с картинками
+.sliders-addres-min {
+    min-width: 0;
+    z-index: -2;
+    border-radius: 26px;
+    overflow: hidden;
+    .swiper-wrapper {
+        width: 54.8rem;
+        height: 45.6rem;
+        // overflow: hidden;
+    }
+}
+.sliders-addres-min-img {
+    width: 54.8rem;
+    height: 45.6rem;
+}
+.swiper-slide-addres-min {
+    border-radius: 26px;
+    img {
+        height: 100%;
+        width: auto;
+    }
+}

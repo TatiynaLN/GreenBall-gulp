@@ -41,7 +41,16 @@ main {
   flex-direction: column;
   align-items: center;
 }
-
+.container-slider{
+  width: 100%;
+  max-width: calc(135.5rem + 3rem); // Максимальная ширина контейнера с учетом паддингов (2 х 1.5rem)
+  padding: 0 1.5rem;
+  margin-left: auto;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 // Запрет скролла
 .no-scroll {
   overflow: hidden;

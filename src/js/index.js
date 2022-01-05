@@ -5,9 +5,12 @@ require('svgxuse'); // Полифил для поддержки IE11+ и ста�
 // import mobileMenu from './modules/mobileMenu'; // Мобильное меню
 // import modal from './modules/modal'; // Модалки
 // import slider from './modules/slider'; // Слайдер
-
+import sliderAddres from './modules/sliderAddres'; // Слайдер
+import slidersAddresMin from './modules/slidersAddresMin'; // Слайдер
 
 // accordion();
 // mobileMenu();
 // modal();
 // slider();
+sliderAddres();
+slidersAddresMin();
