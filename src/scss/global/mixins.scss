@@ -8,7 +8,7 @@
 //     font-style: $font-style;
 //     font-display: $font-display;
 // }
-
+// @include Manrope-Light;
 @mixin Manrope-Light($font-family: "Manrope-Light", $font-weight: 300, $font-style: normal, $font-display: swap) {
     font-family: $font-family;
     font-weight: $font-weight;
@@ -50,3 +50,20 @@
     font-style: $font-style;
     font-display: $font-display;
 }
+
+// миксины
+@mixin width($w) {
+    width: $w;
+}
+// .df {
+//     @include width(100%);
+// }
+%width {
+    width: 100%;
+}
+%width-max {
+    width: max-content;
+}
+// .p {
+//     @extend %width;
+// }

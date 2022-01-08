@@ -45,6 +45,7 @@
 // стрелки
 .swiper-button-prev,
 .swiper-button-next {
+    z-index: 1;
     &::after {
         color: brown;
         font-size: 5rem;

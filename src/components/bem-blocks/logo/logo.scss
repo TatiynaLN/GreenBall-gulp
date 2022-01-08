@@ -1,4 +1,8 @@
 .logo {
-    min-width: 13.1rem;
-    max-width: 20.3rem;
+    width: 13.1rem;
+    @media (min-width: 1440px) {
+        width: 100%;
+        min-width: 13.1rem;
+        max-width: 20.3rem;
+    }
 }

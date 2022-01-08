@@ -1,4 +1,10 @@
-.btn {
+button {
     outline: none;
     border: none;
+    font-size: 1.6rem;
+    line-height: 22px;
+    @include Manrope-Semibold;
+}
+.zvonok {
+    color: #0f6b42;
 }

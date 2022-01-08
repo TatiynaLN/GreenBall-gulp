@@ -1,0 +1,30 @@
+a,
+.header-top span,
+.grafic {
+    @include Manrope-Light;
+}
+a,
+.header-top span {
+    color: #000000;
+}
+a {
+    font-size: 1.6rem;
+    line-height: 22px;
+}
+.contacts a {
+    display: block;
+    font-size: 1.8rem;
+    line-height: 25px;
+    transition: all 0.4s;
+    &:focus,
+    &:hover {
+        transition: all 0.4s;
+        color: #0f6b42;
+        text-shadow: 0 0 0.9px #0f6b42, 0 0 0.9px #0f6b42;
+    }
+}
+.grafic,
+.header-top span {
+    font-size: 1.4rem;
+    line-height: 19px;
+}
