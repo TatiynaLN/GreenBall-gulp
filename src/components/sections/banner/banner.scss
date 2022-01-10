@@ -1,0 +1,103 @@
+.main-banner {
+    padding-bottom: 9.5rem;
+}
+.banner {
+}
+.banner-wrapper {
+    display: flex;
+    &__block {
+    }
+    &__block--left {
+    }
+    &__block--right {
+        max-height: 57.5rem;
+        min-width: 700px;
+        position: relative;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-image: url("../img/crug.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+/* селектор */
+.banner-wrapper__block--right img {
+    // width: 100px;
+    // height: 100px;
+    position: absolute;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-name: img1;
+    animation-fill-mode: backwards;
+    &:nth-child(1) {
+        animation-duration: 0.5s;
+        animation-delay: 0.5s;
+    }
+    &:nth-child(2) {
+        animation-duration: 1s;
+        animation-delay: 1s;
+    }
+    &:nth-child(3) {
+        animation-duration: 1.5s;
+        animation-delay: 1.5s;
+    }
+}
+
+/* селектор */
+.banner-wrapper__block--left ul li {
+    position: relative;
+    animation-timing-function: ease-in-out;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+    animation-play-state: running;
+    animation-name: item;
+    animation-fill-mode: backwards;
+    &:nth-child(1) {
+        animation-duration: 0.5s;
+        animation-delay: 0.5s;
+    }
+    &:nth-child(2) {
+        animation-duration: 0.75s;
+        animation-delay: 0.75s;
+    }
+    &:nth-child(3) {
+        animation-duration: 1s;
+        animation-delay: 1s;
+    }
+    &:nth-child(4) {
+        animation-duration: 1.25s;
+        animation-delay: 1.25s;
+    }
+    &:nth-child(5) {
+        animation-duration: 1.5s;
+        animation-delay: 1.5s;
+    }
+}
+
+/* ключевые кадры */
+@keyframes item {
+    0% {
+        left: -120%;
+    }
+
+    100% {
+        left: 0%;
+    }
+}
+
+/* ключевые кадры */
+@keyframes img1 {
+    0% {
+        left: 100%;
+    }
+
+    100% {
+        left: 50%;
+    }
+}
