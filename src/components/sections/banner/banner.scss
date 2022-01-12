@@ -1,26 +1,70 @@
 .main-banner {
     padding-bottom: 9.5rem;
+    padding-top: 2.1rem;
+    @media(min-width:1024px){
+        padding-bottom: 4rem;
+    }
 }
 .banner {
+    .subtitle{
+        span{
+            @extend %color-green;
+        }
+    }
 }
 .banner-wrapper {
     display: flex;
+    justify-content: space-between;
+    @extend %width;
     &__block {
+        li{
+            margin-top: 0.6rem;
+            &:first-child{
+                margin-top: 0;
+            }
+            a{
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+                gap: 2rem;
+            }
+            img{
+                width: 5.6rem;
+                height: 5.6rem;
+            }
+        }
     }
     &__block--left {
     }
     &__block--right {
+        min-height: 34.2rem;
+        display: none;
+        @media(min-width:1024px){
+            max-height: 57.5rem;
+            min-height: 57.5rem;
+            min-width: 29rem;
+            max-width: 74.7rem;
+            width: 100%;
+            position: relative;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url("../img/crug.jpg");
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+    }
+    &__block--img--modile{
         max-height: 57.5rem;
-        min-width: 700px;
-        position: relative;
-        overflow: hidden;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-image: url("../img/crug.jpg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
+        min-height: 57.5rem;
+        min-width: 29rem;
+        max-width: 74.7rem;
+        width: 100%;
+        @media(min-width:1024px){
+            display: none;
+        }
     }
 }
 
@@ -83,21 +127,21 @@
 /* ключевые кадры */
 @keyframes item {
     0% {
-        left: -120%;
+        opacity: 0;
     }
 
     100% {
-        left: 0%;
+        opacity: 1;
     }
 }
 
 /* ключевые кадры */
 @keyframes img1 {
     0% {
-        left: 100%;
+        opacity: 0;
     }
 
     100% {
-        left: 50%;
+        opacity: 1;
     }
 }

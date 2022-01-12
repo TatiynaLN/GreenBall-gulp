@@ -55,6 +55,8 @@
 @mixin width($w) {
     width: $w;
 }
+
+
 // .df {
 //     @include width(100%);
 // }
@@ -63,6 +65,9 @@
 }
 %width-max {
     width: max-content;
+}
+%color-green {
+    color: #0F6A42;
 }
 // .p {
 //     @extend %width;

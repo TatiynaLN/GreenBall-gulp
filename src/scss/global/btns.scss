@@ -6,5 +6,5 @@ button {
     @include Manrope-Semibold;
 }
 .zvonok {
-    color: #0f6b42;
+    @extend %color-green;
 }
