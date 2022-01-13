@@ -1,5 +1,6 @@
 a,
 p,
+.h2,
 .header-top span,
 .grafic {
     @include Manrope-Light;
@@ -15,6 +16,7 @@ p,
 
 a,
 p,
+.h2,
 .title,
 .header-top span {
     color: #000000;
@@ -98,4 +100,29 @@ a {
             line-height: 27px;
         }
     }
+}
+
+.h2 {
+    font-size: 4rem;
+    line-height: 55px;
+    position: relative;
+    text-align: center;
+    @media (min-width: 900px) {
+        margin-bottom: 5.6rem;
+    }
+    &::after {
+        @extend %psevdo-absolut-content;
+        width: 15.5rem;
+        height: 1.2rem;
+        @extend %bg-yellow;
+        bottom: -1.8rem;
+        left: 50%;
+        border-radius: 60px;
+        transform: translate(-50%, 0%);
+        @media (min-width: 900px) {
+            // bottom: -1rem;
+        }
+    }
+}
+p {
 }

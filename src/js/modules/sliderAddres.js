@@ -7,7 +7,7 @@ export default function slider() {
             // стрелки
             navigation: {
                 nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev'
+                //prevEl: '.swiper-button-prev'
             },
 
 
@@ -78,10 +78,10 @@ export default function slider() {
 
 
             // активный слайд по центру
-            // centeredSlides: false,
+            centeredSlides: false,
 
             // стартовый слайд
-            initialSlide: 2, // отсчет с 0
+            initialSlide: 0, // отсчет с 0
 
             // бесконечный слайд
             loop: true,  // скрол и мультирятность отключить, slidesPerView: auto(нельзя),
@@ -96,7 +96,7 @@ export default function slider() {
             //       320: {
 
             // колличество слайдов для показа
-            slidesPerView: 1.5, // если значение авто не забудь про css
+            slidesPerView: 1.4, // если значение авто не забудь про css
 
 
             //колличество пролистываемых слайдов 

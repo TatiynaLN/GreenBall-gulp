@@ -8,7 +8,8 @@
     // width: auto; если в js колличество для показа стоит auto
 }
 .slider-addres {
-    width: 98.8rem;
+    //width: 98.8rem;
+    padding-top: 6.7rem;
 }
 .swiper-slider-addres {
     display: flex;
@@ -43,7 +44,9 @@
     }
 }
 // стрелки
-.swiper-button-prev,
+.swiper-button-prev {
+    display: none;
+}
 .swiper-button-next {
     z-index: 1;
     &::after {
