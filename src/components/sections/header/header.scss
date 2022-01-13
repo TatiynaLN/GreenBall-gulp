@@ -151,6 +151,12 @@
         }
     }
     .addres {
+        @media (min-width: 1024px) {
+            display: none;
+        }
+        @media (min-width: 1150px) {
+            display: block;
+        }
         @media (min-width: 1440px) {
             margin-top: 1.25rem;
         }
