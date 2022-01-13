@@ -8,3 +8,51 @@ button {
 .zvonok {
     @extend %color-green;
 }
+.btn {
+    border-radius: 60px;
+    font-size: 1.6rem;
+    line-height: 22px;
+    @include Manrope-Semibold;
+    padding: 2.1rem;
+    height: 6.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.4s;
+    @media (min-width: 500px) {
+        max-width: 33rem;
+        min-width: 33rem;
+    }
+}
+.orange {
+    @extend %bg-orange;
+    @extend %color-white;
+    box-shadow: 0px 5px 1px 0px #ba6729;
+    &:hover,
+    &:focus {
+        // @extend %bg-white;
+        // color: #ff8427;
+        box-shadow: none;
+        transition: all 0.4s;
+    }
+}
+.white {
+    @extend %bg-white;
+    border: 2px solid #ff8427;
+    box-shadow: 0px 5px 1px 0px #e78a44;
+    @extend %color-orange;
+    &:hover,
+    &:focus {
+        // @extend %bg-orange;
+        // @extend %color-white;
+        box-shadow: none;
+        transition: all 0.4s;
+    }
+}
+.button--wrapper {
+    width: 100%;
+    @media (min-width: 700px) {
+        display: flex;
+    }
+}

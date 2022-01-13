@@ -1,13 +1,25 @@
 .main-banner {
-    padding-bottom: 9.5rem;
+    padding-bottom: 5.9rem;
     padding-top: 2.1rem;
     @media (min-width: 1024px) {
         padding-bottom: 4rem;
+        padding-top: 4.7rem;
     }
 }
 .banner {
     .subtitle {
+        font-size: 2rem;
+        line-height: 27px;
+        margin-bottom: 1.1rem;
+        text-align: center;
+        padding: 0 1.7rem;
+        @media (min-width: 900px) {
+            font-size: 3.4rem;
+            line-height: 46px;
+            text-align: left;
+        }
         span {
+            @include Manrope-Bold;
             @extend %color-green;
         }
     }
@@ -16,9 +28,20 @@
     display: flex;
     justify-content: space-between;
     @extend %width;
+    @media (min-width: 900px) {
+        position: relative;
+    }
     &__block {
+        ul {
+            margin-bottom: 2.3rem;
+            max-width: max-content;
+            @media (min-width: 1024px) {
+                margin-bottom: 6.3rem;
+                padding-left: 2rem;
+            }
+        }
         li {
-            margin-top: 0.6rem;
+            margin-top: 0.9rem;
             &:first-child {
                 margin-top: 0;
             }
@@ -34,9 +57,43 @@
                 margin: 0;
             }
         }
+        .btn {
+            margin: 0 auto;
+            @media (min-width: 500px) {
+                max-width: 30rem;
+                min-width: 30rem;
+            }
+            @media (min-width: 900px) {
+                margin: 0;
+            }
+        }
+        .orange {
+            margin-bottom: 2.4rem;
+            @media (min-width: 900px) {
+                margin-bottom: 2.4rem;
+            }
+        }
+        .white {
+            width: 100%;
+            @media (min-width: 500px) {
+            }
+        }
+        .button--wrapper {
+            @media (min-width: 900px) {
+                justify-content: flex-start;
+                gap: 4.5rem;
+            }
+            @media (min-width: 1024px) {
+                padding-left: 2rem;
+            }
+        }
     }
     &__block--left {
         width: 100%;
+        @media (min-width: 900px) {
+            max-width: max-content;
+            padding-left: 3rem;
+        }
         img {
             margin: 0 auto;
         }
@@ -44,14 +101,17 @@
     &__block--right {
         min-height: 34.2rem;
         display: none;
-        @media (min-width: 1024px) {
+        @media (min-width: 900px) {
             max-height: 57.5rem;
+            max-height: 47.5rem;
             min-height: 57.5rem;
+            min-height: 37.5rem;
             min-width: 29rem;
             max-width: 74.7rem;
+            max-width: 44.7rem;
+            right: 0;
             width: 100%;
-            position: relative;
-            overflow: hidden;
+            position: absolute;
             display: flex;
             flex-direction: column;
             align-items: center;
@@ -59,15 +119,23 @@
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
+            z-index: -2;
+            top: 50%;
+            transform: translate(0%, -50%);
+        }
+        @media (min-width: 1180px) {
+            max-height: 57.5rem;
+            min-height: 57.5rem;
+            min-width: 29rem;
+            max-width: 74.7rem;
         }
     }
     &__block--img--modile {
         max-height: 57.5rem;
         min-height: 24.2rem;
         min-width: 29rem;
-        max-width: 74.7rem;
         width: 100%;
-        @media (min-width: 1024px) {
+        @media (min-width: 900px) {
             display: none;
         }
     }
@@ -105,7 +173,9 @@
     animation-iteration-count: 1;
     animation-direction: normal;
     animation-play-state: running;
-    animation-name: item;
+    @media (min-width: 1024px) {
+        animation-name: item;
+    }
     animation-fill-mode: backwards;
     &:nth-child(1) {
         animation-duration: 0.5s;

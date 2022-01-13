@@ -56,7 +56,6 @@
     width: $w;
 }
 
-
 // .df {
 //     @include width(100%);
 // }
@@ -67,8 +66,32 @@
     width: max-content;
 }
 %color-green {
-    color: #0F6A42;
+    color: #0f6a42;
+}
+%color-white {
+    color: #fff;
+}
+%color-orange {
+    color: #ff8427;
+}
+%bg-yellow {
+    background-color: #ffdc2d;
+}
+%bg-orange {
+    background-color: #ff8427;
+}
+%bg-white {
+    background-color: #fff;
 }
 // .p {
 //     @extend %width;
+// }
+%psevdo-absolut-content {
+    position: absolute;
+    content: "";
+}
+
+// .p {
+//     color: $color-p;
+//     @extend %psevdo-absolut-content;
 // }
