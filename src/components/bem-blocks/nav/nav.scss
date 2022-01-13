@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
 
-    @media (min-width: 1024px) {
+    @media (min-width: 1340px) {
         flex: 1;
         align-items: center;
     }
@@ -15,7 +15,7 @@
         align-items: center;
         margin-bottom: 2rem;
 
-        @media (min-width: 1024px) {
+        @media (min-width: 1340px) {
             width: 100%;
             flex-direction: row;
             justify-content: space-between;
@@ -30,7 +30,7 @@
             display: inline-flex;
             text-indent: initial;
             @extend %width;
-            @media (min-width: 1024px) {
+            @media (min-width: 1340px) {
                 min-width: max-content;
                 width: calc(100% / 7);
             }
@@ -69,7 +69,7 @@
                 @extend %width;
                 padding: 1.2rem 0rem;
                 text-align: center;
-                @media (min-width: 1024px) {
+                @media (min-width: 1340px) {
                     padding: 1.2rem 3rem;
                 }
             }
@@ -98,7 +98,7 @@
         transition: all 0.4s;
         transform: scale(1.2);
     }
-    img{
-        min-width: 100%
+    img {
+        min-width: 100%;
     }
 }

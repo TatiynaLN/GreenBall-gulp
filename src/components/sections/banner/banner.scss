@@ -1,13 +1,13 @@
 .main-banner {
     padding-bottom: 9.5rem;
     padding-top: 2.1rem;
-    @media(min-width:1024px){
+    @media (min-width: 1024px) {
         padding-bottom: 4rem;
     }
 }
 .banner {
-    .subtitle{
-        span{
+    .subtitle {
+        span {
             @extend %color-green;
         }
     }
@@ -17,29 +17,34 @@
     justify-content: space-between;
     @extend %width;
     &__block {
-        li{
+        li {
             margin-top: 0.6rem;
-            &:first-child{
+            &:first-child {
                 margin-top: 0;
             }
-            a{
+            a {
                 display: flex;
                 align-items: center;
                 justify-content: flex-start;
                 gap: 2rem;
             }
-            img{
+            img {
                 width: 5.6rem;
                 height: 5.6rem;
+                margin: 0;
             }
         }
     }
     &__block--left {
+        width: 100%;
+        img {
+            margin: 0 auto;
+        }
     }
     &__block--right {
         min-height: 34.2rem;
         display: none;
-        @media(min-width:1024px){
+        @media (min-width: 1024px) {
             max-height: 57.5rem;
             min-height: 57.5rem;
             min-width: 29rem;
@@ -56,13 +61,13 @@
             background-size: cover;
         }
     }
-    &__block--img--modile{
+    &__block--img--modile {
         max-height: 57.5rem;
-        min-height: 57.5rem;
+        min-height: 24.2rem;
         min-width: 29rem;
         max-width: 74.7rem;
         width: 100%;
-        @media(min-width:1024px){
+        @media (min-width: 1024px) {
             display: none;
         }
     }

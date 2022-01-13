@@ -29,11 +29,11 @@ export default function mobileMenu() {
         window.addEventListener('resize', () => {
             screenWidth = window.innerWidth;
 
-            if (screenWidth < 1024) {
+            if (screenWidth < 1340) {
                 linksClick();
             }
 
-            if (screenWidth >= 1024) {
+            if (screenWidth >= 1340) {
                 hamburger.classList.remove('active');
                 mobileMenu.classList.remove('header__inner--active');
                 overlayMenu.classList.remove('overlay-burger--active');

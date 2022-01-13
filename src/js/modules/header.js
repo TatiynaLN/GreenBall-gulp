@@ -17,7 +17,7 @@ export default function header__inner() {
         }
     }
 
-    if (window.innerWidth >= 1024) {
+    if (window.innerWidth >= 1340) {
         window.addEventListener('scroll', stickyMenu);
         window.addEventListener('load', stickyMenu);
     } else {
@@ -26,7 +26,7 @@ export default function header__inner() {
     }
 
     window.addEventListener('resize', () => {
-        if (window.innerWidth >= 1024) {
+        if (window.innerWidth >= 1340) {
             window.addEventListener('scroll', stickyMenu);
             window.addEventListener('load', stickyMenu);
         } else {
