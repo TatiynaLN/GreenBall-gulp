@@ -32,8 +32,18 @@
     @media (min-width: 1024px) {
         gap: 1rem;
         padding-bottom: 2.4rem;
+        justify-content: flex-start;
     }
     &__block {
+        @media (min-width: 1440px) {
+            margin-left: 5rem;
+            margin-top: 1.8rem;
+        }
+    }
+    .grafic {
+        @media (min-width: 1440px) {
+            margin-top: 1rem;
+        }
     }
     span,
     .contacts,
@@ -53,13 +63,21 @@
         }
         @media (min-width: 1440px) {
             display: block;
+            margin-left: 1.6rem;
+            margin-top: 2.1rem;
         }
     }
     .contacts {
+        margin-left: 7rem;
+        margin-top: 2rem;
     }
     .social {
         @media (min-width: 1024px) {
             display: flex;
+        }
+        @media (min-width: 1440px) {
+            margin-left: 2.5rem;
+            margin-top: 2.1rem;
         }
     }
     .zvonok {
