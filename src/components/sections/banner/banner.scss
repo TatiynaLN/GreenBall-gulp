@@ -102,12 +102,9 @@
         min-height: 34.2rem;
         display: none;
         @media (min-width: 900px) {
-            max-height: 57.5rem;
             max-height: 47.5rem;
-            min-height: 57.5rem;
             min-height: 37.5rem;
             min-width: 29rem;
-            max-width: 74.7rem;
             max-width: 44.7rem;
             right: 0;
             width: 100%;
@@ -128,6 +125,7 @@
             min-height: 57.5rem;
             min-width: 29rem;
             max-width: 74.7rem;
+            transform: translate(-18%, -59%);
         }
     }
     &__block--img--modile {
