@@ -2,8 +2,8 @@
     padding-bottom: 5.9rem;
     padding-top: 2.1rem;
     @media (min-width: 1024px) {
-        padding-bottom: 4rem;
         padding-top: 4.7rem;
+        padding-bottom: 9rem;
     }
 }
 .banner {
@@ -42,6 +42,11 @@
         }
         li {
             margin-top: 0.9rem;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 2rem;
+
             &:first-child {
                 margin-top: 0;
             }

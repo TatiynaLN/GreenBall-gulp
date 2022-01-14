@@ -7,7 +7,7 @@ h4,
     @include Manrope-Light;
 }
 h3,
-.banner li a {
+.banner li {
     @include Manrope-Medium;
 }
 .size,
@@ -89,19 +89,9 @@ a {
     }
 }
 .banner li {
-    &:hover,
-    &:focus {
-        a {
-            transition: color 0.4s;
-            @extend %color-green;
-        }
-    }
-    a {
-        transition: color 0.4s;
-        @media (min-width: 1024px) {
-            font-size: 2rem;
-            line-height: 27px;
-        }
+    @media (min-width: 1024px) {
+        font-size: 2rem;
+        line-height: 27px;
     }
 }
 

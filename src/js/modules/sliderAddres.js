@@ -74,7 +74,7 @@ export default function slider() {
             watchOverflow: true,
 
             //     // отступы между слайдов
-            spaceBetween: 30,
+            spaceBetween: 113,
 
 
             // активный слайд по центру

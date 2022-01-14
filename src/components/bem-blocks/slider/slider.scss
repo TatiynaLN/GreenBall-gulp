@@ -57,6 +57,7 @@
         margin-bottom: 1.3rem;
         &:last-child {
             margin-bottom: 0;
+            padding-top: 0.9rem;
         }
         .size {
             font-size: 2.4rem;
@@ -72,6 +73,8 @@
 }
 .swiper-button-next {
     z-index: 1;
+    right: 32%;
+    transform: translate(-81%, 30%);
     &::after {
         color: brown;
         font-size: 5rem;
