@@ -42,6 +42,29 @@
         border-radius: 26px;
         z-index: -1;
     }
+    span {
+        font-size: 1.8rem;
+        line-height: 25px;
+        margin-bottom: 5rem;
+        display: block;
+    }
+}
+.swiper-slider-addres .slider-addres-txt {
+    p {
+        text-align: left;
+        font-size: 1.6rem;
+        line-height: 22px;
+        margin-bottom: 1.3rem;
+        &:last-child {
+            margin-bottom: 0;
+        }
+        .size {
+            font-size: 2.4rem;
+            @extend %color-green;
+            display: inline;
+            padding-right: 1.4rem;
+        }
+    }
 }
 // стрелки
 .swiper-button-prev {
@@ -96,42 +119,42 @@
 }
 
 // переменные
-$color-p: red;
-$color2-p: rgb(32, 0, 128);
-//
-%name-item {
-    font-size: 3rem;
-    padding: 2rem;
-    background-color: rgba(green, 0.8);
-    margin-bottom: 1rem;
-}
+// $color-p: red;
+// $color2-p: rgb(32, 0, 128);
+// //
+// %name-item {
+//     font-size: 3rem;
+//     padding: 2rem;
+//     background-color: rgba(green, 0.8);
+//     margin-bottom: 1rem;
+// }
 
 /*как подключит второй файл scss для компиляции в общий css
 @import "name.scss";
 */
-.p {
-    color: $color-p;
-    @extend %name-item;
-}
-.p2 {
-    color: $color2-p;
-    @extend %name-item;
-}
-.p3 {
-    color: $color-p;
-    @extend %name-item;
-    margin-bottom: 5rem;
-}
+// .p {
+//     color: $color-p;
+//     @extend %name-item;
+// }
+// .p2 {
+//     color: $color2-p;
+//     @extend %name-item;
+// }
+// .p3 {
+//     color: $color-p;
+//     @extend %name-item;
+//     margin-bottom: 5rem;
+// }
 
-// миксины
-@mixin df($f, $j, $a) {
-    display: $f;
-    justify-content: $j;
-    align-items: $a;
-}
-.df {
-    @include df(flex, space-between, center);
-}
+// // миксины
+// @mixin df($f, $j, $a) {
+//     display: $f;
+//     justify-content: $j;
+//     align-items: $a;
+// }
+// .df {
+//     @include df(flex, space-between, center);
+// }
 // слайдер в слайдере с картинками
 .sliders-addres-min {
     min-width: 0;
@@ -154,4 +177,14 @@ $color2-p: rgb(32, 0, 128);
         height: 100%;
         width: auto;
     }
+}
+.h3-slider {
+    font-size: 3rem;
+    line-height: 41px;
+    margin-bottom: 0.8rem;
+}
+.h4-slider {
+    font-size: 2.4rem;
+    line-height: 33px;
+    margin-bottom: 1.2rem;
 }

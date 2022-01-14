@@ -1,15 +1,16 @@
 a,
 p,
 .h2,
+h4,
 .header-top span,
 .grafic {
     @include Manrope-Light;
 }
-
+h3,
 .banner li a {
     @include Manrope-Medium;
 }
-
+.size,
 .title {
     @include Manrope-Bold;
 }
@@ -17,6 +18,8 @@ p,
 a,
 p,
 .h2,
+h3,
+h4,
 .title,
 .header-top span {
     color: #000000;
