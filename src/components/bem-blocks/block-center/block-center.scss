@@ -10,11 +10,15 @@
     display: flex;
     align-items: flex-end;
     justify-content: center;
+    margin-bottom: 6.5rem;
     @media (min-width: 1024px) {
         background: #ffffff;
         border: 2px solid #e2e2e2;
         box-shadow: 0px 5px 1px 0px #e2e2e2;
         padding: 1.6rem 3rem 3.3rem 3rem;
+    }
+    @media (min-width: 1340px) {
+        margin-bottom: 0rem;
     }
     .block-center__img {
         width: 100%;
