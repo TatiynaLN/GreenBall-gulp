@@ -1,11 +1,12 @@
-.sliderss-arrow {
+.sliderss-arrow,
+.sliders-addres {
     // display: flex;
-    // min-width: 0;
+    //min-width: 0;
     position: relative; // напиши или потеряешь стрелки
 }
-
+.sliders-addres,
 .slider-arrow {
-    // width: auto; если в js колличество для показа стоит auto
+    //width: auto; //если в js колличество для показа стоит auto
 }
 .slider-addres {
     //width: 98.8rem;
@@ -13,11 +14,18 @@
 }
 .swiper-slider-addres {
     display: flex;
-    justify-content: flex-end;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
+    @media (min-width: 1400px) {
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 456px;
+    }
+
     width: 100%;
-    width: 98.8rem !important;
-    height: 456px;
+    //max-width: 98.8rem !important;
+    //height: 456px;
 }
 
 .slider-addres-txt {
@@ -29,8 +37,13 @@
     position: relative;
     box-shadow: 0 10px 5px -5px #b8b8b8;
     height: max-content;
-    padding: 3.8rem 5.1rem;
-    margin-right: -6rem;
+    padding: 1.8rem 2.1rem;
+    margin-bottom: -7rem;
+    @media (min-width: 1400px) {
+        margin-right: -6rem;
+        margin-bottom: 0;
+        padding: 3.8rem 5.1rem;
+    }
     &::after {
         position: absolute;
         content: "";
@@ -43,27 +56,38 @@
         z-index: -1;
     }
     span {
-        font-size: 1.8rem;
-        line-height: 25px;
-        margin-bottom: 5rem;
+        font-size: 1.4rem;
+        line-height: 22px;
+        margin-bottom: 2rem;
         display: block;
+        @media (min-width: 1600px) {
+            font-size: 1.8rem;
+            line-height: 25px;
+            margin-bottom: 5rem;
+        }
     }
 }
 .swiper-slider-addres .slider-addres-txt {
     p {
         text-align: left;
-        font-size: 1.6rem;
+        font-size: 1.4rem;
         line-height: 22px;
         margin-bottom: 1.3rem;
+        @media (min-width: 1600px) {
+            font-size: 1.6rem;
+        }
         &:last-child {
             margin-bottom: 0;
             padding-top: 0.9rem;
         }
         .size {
-            font-size: 2.4rem;
+            font-size: 1.8rem;
             @extend %color-green;
             display: inline;
             padding-right: 1.4rem;
+            @media (min-width: 1600px) {
+                font-size: 2.4rem;
+            }
         }
     }
 }
@@ -73,11 +97,32 @@
 }
 .swiper-button-next {
     z-index: 1;
-    right: 32%;
-    transform: translate(-81%, 30%);
+    right: -1rem;
     &::after {
-        color: brown;
+        @extend %color-green;
         font-size: 5rem;
+    }
+    @media (min-width: 480px) {
+        right: 2%;
+    }
+    @media (min-width: 580px) {
+        right: 5%;
+    }
+    @media (min-width: 768px) {
+        right: 32%;
+        transform: translate(-81%, 30%);
+    }
+    @media (min-width: 1400px) {
+        right: 30.3%;
+        transform: translate(-81%, 30%);
+    }
+    @media (min-width: 1550px) {
+        right: 28%;
+        transform: translate(-81%, 30%);
+    }
+    @media (min-width: 1600px) {
+        right: 34%;
+        transform: translate(-81%, 30%);
     }
 }
 // НЕ активная стрелка
@@ -87,77 +132,7 @@
         opacity: 0.8;
     }
 }
-// буллеты - пагинация
-// обертка буллетов
-.swiper-pagination {
-}
-// буллеты
-.swiper-pagination-bullet {
-    width: 2rem;
-    height: 2rem;
-    line-height: 2rem;
-    font-size: 2rem;
-    background-color: yellowgreen;
-}
-// активный буллет
-.swiper-pagination-bullet-active {
-    width: 3rem;
-    height: 3rem;
-    line-height: 3rem;
-    font-size: 3rem;
-    background-color: rgb(141, 10, 108);
-}
-// Прогрессбар
-.sliderss-arrow .swiper-pagination-progressbar-fill {
-    background-color: tomato;
-}
 
-// СКРОЛЛБАР
-.sliderss-arrow .swiper-scrollbar {
-    cursor: pointer;
-    background-color: violet;
-}
-.swiper-scrollbar-drag {
-    background-color: yellow;
-}
-
-// переменные
-// $color-p: red;
-// $color2-p: rgb(32, 0, 128);
-// //
-// %name-item {
-//     font-size: 3rem;
-//     padding: 2rem;
-//     background-color: rgba(green, 0.8);
-//     margin-bottom: 1rem;
-// }
-
-/*как подключит второй файл scss для компиляции в общий css
-@import "name.scss";
-*/
-// .p {
-//     color: $color-p;
-//     @extend %name-item;
-// }
-// .p2 {
-//     color: $color2-p;
-//     @extend %name-item;
-// }
-// .p3 {
-//     color: $color-p;
-//     @extend %name-item;
-//     margin-bottom: 5rem;
-// }
-
-// // миксины
-// @mixin df($f, $j, $a) {
-//     display: $f;
-//     justify-content: $j;
-//     align-items: $a;
-// }
-// .df {
-//     @include df(flex, space-between, center);
-// }
 // слайдер в слайдере с картинками
 .sliders-addres-min {
     min-width: 0;
@@ -165,29 +140,50 @@
     border-radius: 26px;
     overflow: hidden;
     .swiper-wrapper {
-        width: 54.8rem;
-        height: 45.6rem;
+        // width: 54.8rem;
+        // height: 45.6rem;
         // overflow: hidden;
     }
 }
 .sliders-addres-min-img {
-    width: 54.8rem;
-    height: 45.6rem;
+    width: 30rem;
+    height: 23rem;
+    @media (min-width: 400px) {
+        width: 37.2rem;
+        height: 30rem;
+    }
+    @media (min-width: 1400px) {
+        width: 44rem;
+        height: 40rem;
+    }
+    @media (min-width: 1600px) {
+        width: 54.8rem;
+        height: 45.6rem;
+    }
 }
 .swiper-slide-addres-min {
     border-radius: 26px;
     img {
         height: 100%;
-        width: auto;
+        width: 100%;
+        object-fit: cover;
     }
 }
 .h3-slider {
-    font-size: 3rem;
-    line-height: 41px;
+    font-size: 1.8rem;
+    line-height: 25px;
     margin-bottom: 0.8rem;
+    @media (min-width: 1600px) {
+        font-size: 3rem;
+        line-height: 41px;
+    }
 }
 .h4-slider {
-    font-size: 2.4rem;
-    line-height: 33px;
+    font-size: 1.6rem;
+    line-height: 23px;
     margin-bottom: 1.2rem;
+    @media (min-width: 1600px) {
+        font-size: 2.4rem;
+        line-height: 33px;
+    }
 }

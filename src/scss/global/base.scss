@@ -47,6 +47,10 @@ main {
   margin-left: auto;
   height: 100%;
   overflow: hidden;
+  padding: 0 1.5rem;
+  @media (min-width: 1024px) {
+    padding: 0;
+  }
 }
 // Запрет скролла
 .no-scroll {
