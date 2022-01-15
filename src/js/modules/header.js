@@ -1,6 +1,6 @@
 export default function header__inner() {
 
-    let menu = document.querySelector('.header__inner');
+    let menu = document.querySelector('.header-fixed');
     // let menuInner = document.querySelector('.header__bottom-inner');
     let section = document.querySelectorAll('section')[0];
     let sticky = menu.offsetTop;

@@ -6,6 +6,9 @@
     @media (min-width: 1340px) {
         flex: 1;
         align-items: center;
+        // max-width: 117.639rem;
+        // background-color: #e2e2e2;
+        transition: all 1s;
     }
 
     ul {
@@ -20,6 +23,7 @@
             flex-direction: row;
             justify-content: space-between;
             margin-bottom: 0;
+            transition: all 1s;
         }
 
         @media (min-width: 1440px) {
@@ -88,11 +92,12 @@
     }
 }
 .item-logo {
-    display: none;
-    width: 9rem;
-    margin: 0 4rem;
+    opacity: 0;
+    visibility: hidden;
+    width: 0rem;
+
     transition: all 0.4s;
-    transform: scale(1);
+    transform: scale(0) translateX(-20rem);
     &:hover,
     &:focus {
         transition: all 0.4s;
