@@ -4,9 +4,15 @@
 .cards-wrapper {
     width: 100%;
     max-width: 116rem;
-    display: flex;
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: space-between;
-    gap: 5.9rem 3rem;
+    .swiper-wrapper {
+        @media (min-width: 1200px) {
+            flex-wrap: wrap;
+            gap: 3rem 5rem;
+        }
+    }
+    .swiper-slider-card {
+        display: flex;
+        justify-content: center;
+        max-width: 55.1rem;
+    }
 }

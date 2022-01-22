@@ -9,7 +9,7 @@ import mobileMenu from './modules/mobileMenu'; // Мобильное меню
 import sliderAddres from './modules/sliderAddres'; // Слайдер
 import slidersAddresMin from './modules/slidersAddresMin'; // Слайдер
 import header__inner from './modules/header'; // липкая шапка
-
+import sliderCards from './modules/sliderCards';
 // accordion();
 mobileMenu();
 // modal();
@@ -17,3 +17,4 @@ mobileMenu();
 sliderAddres();
 slidersAddresMin();
 header__inner();
+sliderCards();

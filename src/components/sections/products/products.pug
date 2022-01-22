@@ -10,5 +10,15 @@ section.products
                 a.link-orange(href="/") Читать подробности условий работы
         include ./../../bem-blocks/card/card2.pug
         .cards-wrapper
-            include ./../../bem-blocks/card/card3.pug
-            include ./../../bem-blocks/card/card4.pug
+            .sliders-cards
+                //- Slider main container
+                .swiper.slider-card
+                    //-   Additional required wrapper
+                    .swiper-wrapper
+                        //- Slides
+                        .swiper-slide.swiper-slider-card
+                            include ./../../bem-blocks/card/card3.pug
+                        .swiper-slide.swiper-slider-card
+                            include ./../../bem-blocks/card/card4.pug
+                        .swiper-slide.swiper-slider-card
+                            include ./../../bem-blocks/card/card5.pug
