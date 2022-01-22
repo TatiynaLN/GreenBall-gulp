@@ -8,7 +8,7 @@
     "build": "webpack --mode production"
   },
   "browserslist": [
-    "ie 11"
+    "last 4 version"
   ],
   "author": "Demchenko Vyacheslav <frontend-ninja@yandex.ru>",
   "keywords": [
