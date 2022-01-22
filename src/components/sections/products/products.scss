@@ -1,0 +1,12 @@
+.products {
+    width: 100%;
+}
+.cards-wrapper {
+    width: 100%;
+    max-width: 116rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5.9rem 3rem;
+}
