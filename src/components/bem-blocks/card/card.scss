@@ -751,6 +751,7 @@
     .card2__left--img--top3 {
         @media (min-width: 1200px) {
             z-index: -1;
+            transform: translate(-1rem, 5.4rem);
         }
     }
 }

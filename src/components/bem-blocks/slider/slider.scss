@@ -97,7 +97,8 @@
 }
 .swiper-button-next {
     z-index: 1;
-    right: -1rem;
+    right: 0rem;
+    top: 35%;
     &::after {
         @extend %color-green;
         font-size: 5rem;
@@ -109,6 +110,7 @@
         right: 5%;
     }
     @media (min-width: 768px) {
+        top: 50%;
         right: 32%;
         transform: translate(-81%, 30%);
     }
