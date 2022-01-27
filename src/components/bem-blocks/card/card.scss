@@ -748,4 +748,9 @@
             transform: translate(0.1rem, -9rem) !important;
         }
     }
+    .card2__left--img--top3 {
+        @media (min-width: 1200px) {
+            z-index: -1;
+        }
+    }
 }
